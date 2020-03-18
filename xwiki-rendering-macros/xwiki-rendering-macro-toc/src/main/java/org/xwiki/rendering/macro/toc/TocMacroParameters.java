@@ -179,6 +179,13 @@ public class TocMacroParameters
     {
         this.reference = reference;
     }
+    
+    @PropertyDescription("Justify the Float  'Left' or 'Right' ")
+    public void setFloat(Float floatParameter){
+
+    this.floatParameter = floatParameter;
+ 
+    }
 
     /**
      * @return the reference to the document for which to generate the table of content
@@ -186,5 +193,10 @@ public class TocMacroParameters
     public String getReference()
     {
         return this.reference;
+    }
+    
+    public Float getFloat()
+    {
+        return this.floatParameter;
     }
 }
