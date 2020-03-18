@@ -46,7 +46,18 @@ public class TocMacroParameters
          */
         PAGE
     }
+    public enum Float
+    {
+        /**
+         * List section starting where macro block is located in the XDOM.
+         */
+        LEFT,
 
+        /**
+         * List the sections of the whole page.
+         */
+        RIGHT
+    }
     /**
      * The minimum section level. For example if 2 then level 1 sections will not be listed.
      */
@@ -69,7 +80,7 @@ public class TocMacroParameters
      * subsections of this section will be listed.
      */
     private Scope scope = Scope.PAGE;
-
+    private Float floatContent = Float.Left;
     /**
      * If true the section title number is printed.
      */
